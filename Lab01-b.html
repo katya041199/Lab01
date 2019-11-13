@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Задание 1</title>
+  <meta charset="UTF-8">
+
+  <script>
+/*НА ЧЕТВЕРКУ*/
+    function addition1() { /*Сложить 2 чила*/
+      var d = parseInt(document.getElementById('d').value);
+      var e = parseInt(document.getElementById('e').value);
+      if (isNaN(d)==true) d=0;
+      if (isNaN(e)==true) e=0;
+      var f = d + e;
+      document.getElementById('result1').innerHTML = d + " + " + e + " = " + f;
+    }
+
+    function addition2() { /*Вычесть 2 числа*/
+      var d = parseInt(document.getElementById('d').value);
+      var e = parseInt(document.getElementById('e').value);
+      if (isNaN(d)==true) d=0;
+      if (isNaN(e)==true) e=0;
+      var f1 = d - e;
+      document.getElementById('result2').innerHTML = d + " - " + e + " = " + f1;
+    }
+
+    function addition3() { /*Умножить 2 числа*/
+      var d = parseInt(document.getElementById('d').value);
+      var e = parseInt(document.getElementById('e').value);
+      if (isNaN(d)==true) d=0;
+      if (isNaN(e)==true) e=0;
+      var f2 = d * e;
+      document.getElementById('result3').innerHTML = d + " * " + e + " = " + f2;
+    }
+
+    function addition4() { /*Разделить 2 числа*/
+      var d = parseInt(document.getElementById('d').value);
+      var e = parseInt(document.getElementById('e').value);
+      if (isNaN(d)==true) d=0;
+      if (isNaN(e)==true) e=0;
+      var f3 = d / e;
+      document.getElementById('result4').innerHTML = d + " / " + e + " = " + f3;
+    }
+</head>
+
+
+<body>
+<h1>На четверку</h1>
+    <form>
+    <input id="d" type="text"><br>
+    <input id="e" type="text"><br>
+    </form>
+  <input type="button" value="Сложить 2 числа" onclick="addition1();">
+  <div id="result1"></div>
+
+  <input type="button" value="Вычесть 2 числа" onclick="addition2();">
+  <div id="result2"></div>
+
+  <input type="button" value="Умножить 2 числа" onclick="addition3();">
+  <div id="result3"></div>
+
+  <input type="button" value="Разделить 2 числа" onclick="addition4();">
+  <div id="result4"></div>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Задание 1</title>
+  <meta charset="UTF-8">
+
+  <script>
+/*НА ПЯТЕРКУ*/
+    function addition5() { /*Синус*/
+      var g = parseInt(document.getElementById('g').value);
+      var j = Math.sin(g * Math.PI / 180);
+      document.getElementById('result5').innerHTML = j;
+    }
+
+    function addition6() { /*Косинус*/
+      var h = parseInt(document.getElementById('g').value);
+      var i = Math.cos(h);
+      document.getElementById('result6').innerHTML = i;
+    }
+  </script>
+</head>
+
+
+<body>
+<h1>На пятерку</h1>
+  <input id="g" type="text"><br>
+
+  <input type="button" value="Синус угла" onclick="addition5();">
+  <div id="result5"></div>
+
+  <input type="button" value="Косинус угла" onclick="addition6();">
+  <div id="result6"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Задание 1</title>
+  <meta charset="UTF-8">
+
+  <script>
+/*НА ТРОЙКУ: Сложить 2 числа*/
+    function addition() {
+      var a = parseInt(document.getElementById('a').value);
+      var b = parseInt(document.getElementById('b').value);
+      if (isNaN(a)==true) a=0;
+      if (isNaN(b)==true) b=0;
+      var c = a + b;
+      document.getElementById('result').innerHTML = a + " + " + b + " = " + c;
+    }
+</head>
+
+
+<body>
+<h1>На тройку</h1>
+    <form>
+    <input id="a" type="text"><br>
+    <input id="b" type="text"><br>
+    <input type="button" value="Сложить 2 числа" onclick="addition();">
+    </form>
+  <div id="result"></div>
+</body>
+</html>
